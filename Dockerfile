@@ -10,4 +10,4 @@ WORKDIR $APP_HOME
 COPY . .
 RUN pip install -r requirements.txt
 
-CMD exec flask run
+CMD exec flask run -h 0.0.0.0
